@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-color: teal;">
+    <header style="text-align: center;"><!--Form Header Start-->
+        <h1><b><i><u>HTML Form</u></i></b></h1>
+        <hr>
+    </header><!--Form Header End-->
+
+    <div><!--Home Page Button-->
+        <a href="index.html">
+            <h2 style="height: 50px; width: 100%; text-align: center; color: whitesmoke; background-color:#303841 ; border: 4px solid #be3144;">
+                <b>Return To Home Page</b>
+            </h2>
+        </a>
+    </div><!--Home Page Button-->
+
+    <section>
+        <h2>I'm Form</h2>
+        <h4>Syntax:</h4>
+        <code>
+            &lt;form&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Learner Survey Form&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label id="name-label" for="name"&gt;Name&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="name" placeholder="Enter your name" required /&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+    
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label id="email-label" for="email"&gt;Email&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" name="email" placeholder="Enter your Email" required /&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label id="number-label" for="number"&gt;Age&lt;span class="clue"&gt;(optional)&lt;/span&gt;&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="number" name="age" min="10" max="99" placeholder="Age" /&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+    
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Which option best describes your current role?&lt;/p&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;select name="role" required&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option disabled selected value&gt;Select current role&lt;/option&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="student"&gt;Student&lt;/option&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="job"&gt;Full Time Job&lt;/option&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="learner"&gt;Full Time Learner&lt;/option&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="preferNo"&gt;Prefer not to say&lt;/option&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="other"&gt;Other&lt;/option&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+    
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Would you like to share your learning to a friend?&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="user-recommend" value="definitely" type="radio" checked /&gt;Definitely&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="user-recommend" value="maybe" type="radio" /&gt;Maybe&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="user-recommend" value="not-sure" type="radio" /&gt;Not sure&lt;/label&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+    
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; What would you like to share?&lt;span&gt;(Check all that apply)&lt;/span>&lt;/p&gt;<br>
+    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="prefer" value="front-end-projects" type="checkbox"/&gt;Front-end Projects&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="prefer" value="back-end-projects" type="checkbox"/&gt;Back-end Projects&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="prefer" value="data-visualization" type="checkbox"/&gt;Data Visualization&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="prefer" value="challenges" type="checkbox"/&gt;Challenges&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="prefer" value="open-source-community" type="checkbox"/&gt;Open Source Community&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="prefer" value="ds" type="checkbox"/&gt;DS & Algo&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="prefer" value="videos" type="checkbox"/&gt;Videos&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="prefer" value="ml" type="checkbox"/&gt;Machine Learning&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="prefer" value="ar" type="checkbox"/&gt;Argumented Reality&lt;/label&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="prefer" value="additional-courses" type="checkbox"/&gt;Additional Courses&lt;/label&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+    
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Any comments or suggestions?&lt;p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea name="comment" rows="5" placeholder="Enter your comment here..."&gt;&lt;textarea&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-group"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit" class="submit-button"&gt;Submit&lt;button&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br>
+        </code>
+
+
+        <div id="output" style="margin-left: 750px; margin-top: -1240px;"><!--Form Section Start-->
+            <h4>Output:</h4>
+            <form>
+                <h1>Learner Survey Form</h1>
+                <div>
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" required />
+                </div>
+    
+                <div>
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter your Email" required />
+                </div>
+                <div>
+                    <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                    <input type="number" name="age" min="10" max="99" placeholder="Age" />
+                </div>
+    
+                <div>
+                    <p>Which option best describes your current role?</p>
+                    <select name="role" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <p>Would you like to share your learning to a friend?</p>
+                    <label>
+                        <input name="user-recommend" value="definitely" type="radio" checked />Definitely</label>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="radio" />Maybe</label>
+                    <label>
+                        <input name="user-recommend" value="not-sure" type="radio" />Not sure</label>
+                </div>
+    
+                <div>
+                    <p> What would you like to share?<span>(Check all that apply)</span></p>
+    
+                    <label>
+                        <input name="prefer" value="front-end-projects" type="checkbox"/>Front-end Projects</label><br>
+                    <label>
+                        <input name="prefer" value="back-end-projects" type="checkbox"/>Back-end Projects</label><br>
+                    <label>
+                        <input name="prefer" value="data-visualization" type="checkbox"/>Data Visualization</label><br>
+                    <label>
+                        <input name="prefer" value="challenges" type="checkbox"/>Challenges</label><br>
+                    <label>
+                        <input name="prefer" value="open-source-community" type="checkbox"/>Open Source Community</label><br>
+                    <label>
+                        <input name="prefer" value="ds" type="checkbox"/>DS & Algo</label><br>
+                    <label>
+                        <input name="prefer" value="videos" type="checkbox"/>Videos</label><br>
+                    <label>
+                        <input name="prefer" value="ml" type="checkbox"/>Machine Learning</label><br>
+                    <label>
+                        <input name="prefer" value="ar" type="checkbox"/>Argumented Reality</label><br>
+                    <label>
+                        <input name="prefer" value="additional-courses" type="checkbox"/>Additional Courses</label><br>
+                </div>
+    
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea name="comment" rows="5" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+            </form><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div><!--Form Header End-->
+    </section>
+
+    <footer>
+        <p style="height: 50px; width: 100%; text-align: center; color: whitesmoke; background-color:#303841 ; border-top: 4px solid #be3144;"><small>Copyright&copy;2020.</small><br>
+            Created By <b>Piyush Gupta</b>
+        </p>
+    </footer>
+    
+</body>
+</html>
